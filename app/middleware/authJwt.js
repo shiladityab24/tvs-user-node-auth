@@ -19,7 +19,7 @@ jwt.verify(token,
                         message: "Unauthorizeed!",
                     });
                 }
-                req.userId = decoded.username;
+                req.userId = decoded.userName;
                 next();
                 });
 };
