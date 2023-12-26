@@ -1,9 +1,9 @@
-// require('dotenv').config()
+require('dotenv').config()
 module.exports = {
-    HOST: "ec2-44-206-204-65.compute-1.amazonaws.com",
-    USER: "ckkidsbzkdjtol",
-    PASSWORD: "78b031dedcd759fd6e9addaff290e64cb84865ef41c05da15767a001db294c8d",
-    DB: "ddgeo4dl829bo1",
+    HOST: process.env.HOST || 'ec2-18-211-215-8.compute-1.amazonaws.com',
+    USER: process.env.USER || 'egabsinpheuafx',
+    PASSWORD: process.env.PASSWORD || 'ee3a02723eccb01e971556e5efbf3e8fcf9094adbb12915e9c9a091fc62a0151',
+    DB: process.env.DB || 'de2gkpp43b84i9',
     dialect: "postgres",
     pool: {
         max:5,
